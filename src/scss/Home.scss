@@ -1,8 +1,62 @@
-p {
-	color: blue;
-	display: flex;
-	font-size: 20px;
+@import 'vars';
+
+html,
+body,
+#app,
+.l-wrapper {
+  height: 100%;
 }
-body {
-	background-color: white;
+
+.l-wrapper {
+  padding: 10px;
+  @media screen and (min-width: $sm-min) {
+    padding: 0;
+  }
+}
+
+.l-page-container {
+  width: 100%;
+  margin: 0;
+  @media screen and (min-width: $sm-min) {
+    width: 550px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $md-min) {
+    width: 800px;
+  }
+}
+
+.l-intro {
+  padding: 0 0 20px 0;
+  h1 {
+    margin-top: 0;
+  }
+  @media screen and (min-width: $sm-min) {
+    padding: 20px;
+  }
+}
+
+.l-link {
+  &__icon {
+    color: #000;
+    margin-right: 2px;
+  }
+}
+
+.l-grid-item {
+  width: 200px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  &__caption {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $sm-min) {
+    width: 150px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $md-min) {
+    width: 200px;
+  }
 }

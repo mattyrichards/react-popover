@@ -1,0 +1,32 @@
+@import 'vars';
+
+.c-player {  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  &__image {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.l-popover-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #fff;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.l-popover-row--no-border {
+  border-bottom: 0;
+}
+
+.c-player-popover__attribute {
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+
+.c-player-popover__value {
+  color: #fff;
+  margin: 0;
+}

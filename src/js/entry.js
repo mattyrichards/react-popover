@@ -6,7 +6,7 @@ import NotFound from './components/NotFound';
 import Home from './components/Home';
 
 const App = (props) =>
-	<div>{props.children}</div>;
+	<div className="l-wrapper">{props.children}</div>;
 
 App.propTypes = {
   children: React.PropTypes.node,

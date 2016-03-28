@@ -8,6 +8,8 @@ The React app is built using Webpack. This is based on another repo of mine: [re
 
 Working demo can be [found here](http://www.kreative.co.uk/github/react-popover).
 
+## Installation
+
 Once you have downloaded/cloned the repo, run:
 
     $ npm install
@@ -20,3 +22,19 @@ The following commands are then available:
 "build" - compiles (and minifies) the React app in the /build/ folder ready for deployment.
 
 "dev" - starts up the dev server (http://localhost:3000) with HMR.
+
+## API
+
+The Popover has three parameters:
+
+| Param | Description | Value |
+|---|---|---|
+| content | Content of the Popover | Usually a String or JSX |
+| alignment | Alignment of the Popover | String: 'top','right','bottom' or 'left' |
+| activate | Set this to true when the Popver is to appear. Will usually be linked to hover/click state | Boolean |
+
+Example:
+
+```html
+  <Popover content={myContent} alignment="top" activate={this.state} />
+```
