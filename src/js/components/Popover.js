@@ -58,17 +58,18 @@ class Popover extends React.Component {
         }
       }
       // Add .fade class at the end to ensure animation happens after display:block
-      popover.classList.add('fade');
+      popover.classList.add('c-popover--fade');
     } else {
-      popover.classList.remove('fade');
+      popover.classList.remove('c-popover--fade');
     }
   }
 
   // Set alignment of Popover
   setAlignment(element, position) {
+    const positionClassName = `c-popover--${position}`;
     const popoverElement = element;
     this.removeClasses(element);
-    popoverElement.classList.add(position);
+    popoverElement.classList.add(positionClassName);
     this.setVerticalCoords(element, position);
   }
 
@@ -101,10 +102,10 @@ class Popover extends React.Component {
   // Reset alignment classes on Popover
   removeClasses(element) {
     const popoverElement = element;
-    popoverElement.classList.remove('top');
-    popoverElement.classList.remove('right');
-    popoverElement.classList.remove('bottom');
-    popoverElement.classList.remove('left');
+    popoverElement.classList.remove('c-popover--top');
+    popoverElement.classList.remove('c-popover--right');
+    popoverElement.classList.remove('c-popover--bottom');
+    popoverElement.classList.remove('c-popover--left');
   }
 
   // Check if Popover is currently off-screen
@@ -141,12 +142,12 @@ class Popover extends React.Component {
 
   render() {
     const popoverClass = classNames({
-      popover: true,
-      active: this.props.activate,
+      'c-popover': true,
+      'c-popover--active': this.props.activate,
     });
     return (
       <div className={popoverClass} ref="popover">
-        <div className="arrow"></div>
+        <div className="c-popover__arrow"></div>
         {this.props.content}
       </div>
     );

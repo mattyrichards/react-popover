@@ -36,5 +36,5 @@ The Popover has three parameters:
 Example:
 
 ```html
-  <Popover content={myContent} alignment="top" activate={this.state} />
+  <Popover content={myContent} alignment="top" activate={this.state.hover} />
 ```
