@@ -1,7 +1,7 @@
 $popoverBackgroundColour: #242424;
 $popoverWidth: 200px;
-// Following two rules must match corresponding values in Popover.js
-// Distance of popover from parent
+/* Following two rules must match corresponding values in Popover.js
+* Distance of popover from parent */
 $popoverSpacing: 5px;
 $popoverArrowSize: 10px;
 
@@ -27,7 +27,6 @@ $popoverArrowSize: 10px;
 
 /* popover position coordinates
 * top and bottom alignment requires JS help for 'top'/'bottom' property */
-
 .c-popover--top,
 .c-popover--bottom {
   left: calc(50% - #{$popoverWidth}/2);
@@ -40,7 +39,7 @@ $popoverArrowSize: 10px;
   left: calc(-#{$popoverWidth} - #{$popoverSpacing} - #{$popoverArrowSize});
 }
 
-/* speech "arrow" coordinates */
+/* "arrow" (i.e. .c-popover__arrow) coordinates */
 .c-popover:before {
   content: ' ';
   position: absolute;
