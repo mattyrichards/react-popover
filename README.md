@@ -6,7 +6,7 @@ At the moment it's possible to specify the content of the popover, preferred ali
 
 The React app is built using Webpack. This is based on another repo of mine: [react-webpack-boilerplate](https://github.com/mattyrichards/react-webpack-boilerplate).
 
-Working demo can be [found here](http://www.kreative.co.uk/github/react-popover).
+Working demo can be [found here](http://www.mttrchrds.com/github/react-popover).
 
 ## Installation
 
